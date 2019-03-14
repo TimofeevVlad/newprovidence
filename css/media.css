@@ -1,0 +1,146 @@
+@media only screen  and (min-width: 2000px) {
+  .iphone-screens .screens {
+    width: 1920px;
+    margin: 0 auto;
+  }
+}
+/* Большие экраны ----------- */
+@media only screen  and (min-width: 2300px) {
+  .iphone {
+    background: url("../img/iphone-feature.png") 20% 125px no-repeat;
+  }
+
+  .map-feature {
+    background: url("../img/map.png") 75% center no-repeat;
+  }
+}
+
+@media only screen  and (max-width : 1824px) {
+  .iphone,
+  .map-feature {
+    background: none;
+  }
+
+  .iphone .container,
+  .map-feature .container {
+    flex-direction: row;
+    justify-content: center;
+    padding: 60px 0;
+  }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (max-device-width : 1024px) {
+  body {
+    font-size: 16px;
+  }
+
+ .container {
+   width: 100%;
+ }
+
+ h1 {
+   font-size: 48px;
+ }
+
+ /* Header */
+ .navigation {
+   align-items: center;
+   justify-content: space-around;
+ }
+
+ .header .logo {
+   display: none;
+ }
+
+ .plan .container {
+   flex-direction: column;
+   align-items: center;
+ }
+
+ .iphone-screens {
+   display: none;
+ }
+}
+
+@media only screen and (max-device-width : 680px) {
+.plan .plans-list {
+  flex-direction: column;
+  align-items: center;
+  }
+
+  .footer .information {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+  }
+  .information .description {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 550px) {
+
+  .navigation {
+    flex-direction: column;
+  }
+  .features-list {
+    flex-direction: column;
+  }
+
+  .feature-item {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .iphone .content,
+  .map-feature .content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .buy-app .container,
+  .newsletter .container {
+    padding: 30px 0;
+    text-align: center;
+  }
+
+  .invite-form input {
+    width: 98%;
+  }
+
+  .invite-form .button {
+    right: 7px;
+  }
+
+  .slider .userpics {
+    width: 130px;
+    padding: 0;
+  }
+
+  .userpics .avatar:nth-child(2n+1) {
+    display: none;
+  }
+
+  .customers .content {
+    width: 100%;
+  }
+
+  .plan .content {
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .information .info-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-menu .menu-about {
+    margin: 30px 0;
+  }
+
+  .footer .copyrights {
+    flex-direction: column;
+  }
+}
